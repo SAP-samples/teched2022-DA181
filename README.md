@@ -30,11 +30,11 @@ Some basic understanding of SAP HANA Platform Tooling
 
 Provide the exercise content here directly in README.md using [markdown](https://guides.github.com/features/mastering-markdown/) and linking to the specific exercise pages, below is an example.
 
-- [Calcview modeling with Web Development Workbench](exercises/ex0/)
-- [Calcuview modeling with Web IDE](exercises/ex1/)
+- [Calculation view modeling with SAP HANA Studio](exercises/ex0/)
+- [Calculation view modeling with SAP Web IDE](exercises/ex1/)
 - [Setup Replication from SAP HANA Platform to SAP HANA Cloud](exercises/ex2/)
 - [Calcview Modeling with Business Application Studio](exercises/ex3/)
-- [Modify Calcview and trigger calcview definition update to SAP HANA Cloud](exercises/ex4/)
+- [Modify Calculation view and trigger update to SAP HANA Cloud](exercises/ex4/)
 
 ## How to obtain support
 
