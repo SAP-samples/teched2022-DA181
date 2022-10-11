@@ -15,7 +15,7 @@ Creating the same calculation views in SAP Web IDE would look very similar to cr
 
     ![import zip file](./screenshots/importZip.png)
 
-- Use the Browse button to search for your local file "TECHED_2022.zip", click on "Open" and confirm with "OK"
+- Use the Browse button to search for your local file "TECHED_2022.zip" (you can download it from the "resources" section), click on "Open" and confirm with "OK"
 
     ![import dialog zip file](./screenshots/importDialogZip.png)
 

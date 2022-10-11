@@ -9,6 +9,8 @@
 </br>
 </br>
 
+> <mark> If you have no running SAP HANA Studio then you can skip this section. To import the tables that are needed for the other sections without using SAP HANA Studio, please follow the steps outlined in "Import_tables_DatabaseExplorer". </mark>
+
 
 In the following steps two calculation views are created from scratch that will later be replicated to SAP HANA Cloud. These models use data of up to three tables. Therefore, these tables are imported first. Afterwards authorizations are granted to use the tables in calculation view modeling
 
