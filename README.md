@@ -33,7 +33,8 @@ Provide the exercise content here directly in README.md using [markdown](https:/
 - [Calcview modeling with Web Development Workbench](exercises/ex0/)
 - [Calcuview modeling with Web IDE](exercises/ex1/)
 - [Setup Replication from SAP HANA Platform to SAP HANA Cloud](exercises/ex2/)
-- [Calcview Modeling with Business Application Studio](exercises/ex3/)
+- [Modify Calcview and trigger calcview definition update to SAP HANA Cloud](exercises/ex3/)
+- [Calcview Modeling with Business Application Studio](exercises/ex4/)
 
 ## How to obtain support
 
