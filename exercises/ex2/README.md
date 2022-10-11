@@ -1,4 +1,4 @@
-# Exercise 2 - Exercise 2 Description
+# Setup Replication from SAP HANA Platform to SAP HANA Cloud
 
 In this exercise, we will create...
 
