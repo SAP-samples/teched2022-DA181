@@ -23,8 +23,8 @@ Some basic understanding of the SAP BTP and SAP HANA Cloud Tooling
    - SAP HANA Database Explorer
  
 Some basic understanding of SAP HANA Platform Tooling
-   - Web Development Workbench (XSC)
-   - Web IDE (XSA)
+   - SAP HANA Studio (XSC)
+   - SAP Web IDE (XSA)
    
 ## Exercises
 
