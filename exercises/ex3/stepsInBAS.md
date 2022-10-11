@@ -214,7 +214,7 @@ If you want to refer to an objects outside of your project you need to define sy
 
   ![basket analysis result](./screenshots/result.png)
 
-- If you want to sort the values by "countFrequncy":
+- If you want to sort the values by "countFrequency":
 
   - In tab "Columns" of the Details of node "Semantics", select icon "Sort Result Set"
     
