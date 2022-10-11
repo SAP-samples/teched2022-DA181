@@ -1,1 +1,1 @@
-# Modify Calcview and trigger calcview definition update to SAP HANA Cloud
+# Calcview modeling with Business Application Studio
