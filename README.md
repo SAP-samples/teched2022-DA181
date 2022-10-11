@@ -28,8 +28,6 @@ Some basic understanding of SAP HANA Platform Tooling
    
 ## Exercises
 
-Provide the exercise content here directly in README.md using [markdown](https://guides.github.com/features/mastering-markdown/) and linking to the specific exercise pages, below is an example.
-
 - [Calculation view modeling with SAP HANA Studio](exercises/ex0/)
 - [Calculation view modeling with SAP Web IDE](exercises/ex1/)
 - [Setup Replication from SAP HANA Platform to SAP HANA Cloud](exercises/ex2/)
