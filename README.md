@@ -28,11 +28,11 @@ Some basic understanding of SAP HANA Platform Tooling
    
 ## Exercises
 
-- [Calculation view modeling with SAP HANA Studio](exercises/ex0/)
-- [Calculation view modeling with SAP Web IDE](exercises/ex1/)
+- [Calculation view modeling with SAP HANA Studio](exercises/Steps_SAP_HANA_STUDIO/)
+- [Calculation view modeling with SAP Web IDE](exercises/Steps_SAP_WEBIDE/)
 - [Setup Replication from SAP HANA Platform to SAP HANA Cloud](exercises/ex2/)
-- [Calcview Modeling with Business Application Studio](exercises/ex3/)
-- [Modify Calculation view and trigger update to SAP HANA Cloud](exercises/ex4/)
+- [Calcview Modeling with Business Application Studio](exercises/Steps_SAP_BAS/)
+- [Modify Calculation view and trigger update to SAP HANA Cloud](exercises/Steps_SAP_BAS/)
 
 ## How to obtain support
 
