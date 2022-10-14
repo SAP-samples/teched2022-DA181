@@ -25,6 +25,13 @@ Some basic understanding of the SAP BTP and SAP HANA Cloud Tooling
 Some basic understanding of SAP HANA Platform Tooling
    - SAP HANA Studio (XSC)
    - SAP Web IDE (XSA)
+
+The following execises provide 2 tracks that can be done together or seperated based on the individual needs of the participants. 
+   - Calculation view based on database schema and repository (XSC) using SAP HANA Studio
+   - Calculation view based on HDI containers and Git (XSA) using SAP Web IDE 
+
+A single SAP HANA Platform will be provided and shared between participants. Detailed server connection info will be provided during the TechEd Live event.
+To follow this exercise, outside the live event, the SAP HANA Platform will not be available and requires a SAP HANA Platform to be available acting as the source system. Also, in a normal corporate environment, the SAP HANA Platform will exist inside corporate firewalls and a cloud connector will be needed to create a network connection from SAP HANA Cloud in BTP to SAP HANA Platfrom on-premise. For simplicity of this workshop, we will bypass the configuration of the cloud connector during the live event.
    
 ## Exercises
 
@@ -33,6 +40,12 @@ Some basic understanding of SAP HANA Platform Tooling
 - [Setup Replication from SAP HANA Platform to SAP HANA Cloud](exercises/ex2/)
 - [Calcview Modeling with Business Application Studio](exercises/Steps_SAP_BAS/)
 - [Modify Calculation view and trigger update to SAP HANA Cloud](exercises/Steps_SAP_BAS/)
+
+## How to install and setup the SAP HANA Platform outside the TechEd live workshop
+- Installation of SAP HANA Express Edition
+
+## How to install and configure cloud connector outside the TechEd live workshop
+- Installation of SAP HANA Express Edition
 
 ## How to obtain support
 
