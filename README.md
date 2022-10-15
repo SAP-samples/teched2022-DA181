@@ -42,10 +42,11 @@ To follow this exercise, outside the live event, the SAP HANA Platform will not 
 - [Modify Calculation view and trigger update to SAP HANA Cloud](exercises/Steps_SAP_BAS/)
 
 ## How to install and setup the SAP HANA Platform outside the TechEd live workshop
-- Installation of SAP HANA Express Edition
+- Installation of [SAP HANA Clients](https://developers.sap.com/tutorials/hana-clients-install.html)
+- Installation of [SAP HANA Platform, express edition](https://developers.sap.com/group.hxe-install-vm-xsa.html)
 
 ## How to install and configure cloud connector outside the TechEd live workshop
-- Installation of SAP HANA Express Edition
+- Installation of SAP Connectivity Service, cloud connector
 
 ## How to obtain support
 
