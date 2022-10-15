@@ -3,8 +3,12 @@
 ## Prerequisites
 
 - a running SAP HANA Studio with a connection to a running SAP HANA Database
+  - For users attending the TechEd 2022 Virtual Live Workshop, a connection info will be provided
+  - For users attending after the event, a local HANA Platform (express edition) is needed. Please follow the [installation instruction](https://developers.sap.com/group.hxe-install-vm-xsa.html)
   
-- database user SYSTEM is used in the connection
+- database user to connect is needed 
+  - For users attending the TechEd 2022 Virtual Live Workshop, a user will be assigned.
+  - For users attending after the event, a system user can be used after the TechEd Live Workshop
 
 </br>
 </br>
@@ -23,7 +27,7 @@ In the following steps two calculation views are created from scratch that will 
 
 ### Extract zip file that contains tables
 
-On your computer, extract the TechEd2022_tables.zip file. You will need the location of the extracted folder that contains folder "index" later.
+On your computer, download and extract the [BASKETANALSYS_TABLES.zip](exercises/resources/BASKETANALSYS_TABLES.zip.zip) file. You will need the location of the extracted folder that contains folder "index" later.
 
 
 ### Import tables
