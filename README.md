@@ -43,6 +43,7 @@ To follow this exercise, outside the live event, the SAP HANA Platform will not 
 
 ## How to install and setup the SAP HANA Platform after TechEd live workshop
 - Installation of [SAP HANA Clients](https://developers.sap.com/tutorials/hana-clients-install.html)
+- Installation of [SAP HANA Studio](https://help.sap.com/docs/SAP_HANA_PLATFORM/a2a49126a5c546a9864aae22c05c3d0e/c13cec2b7c2c46bdb0762ce5f1410260.html)
 - Installation of [SAP HANA Platform, express edition](https://developers.sap.com/group.hxe-install-vm-xsa.html)
 
 ## How to install and configure cloud connector after the TechEd live workshop
