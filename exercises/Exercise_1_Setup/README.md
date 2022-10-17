@@ -123,4 +123,4 @@ The tables have now been imported with data.
 
 You have not prepared the base tables and data needed for modeling the calculation view and be replicated in real-time from on-premise to SAP HANA Cloud.
 
-Continue to - [Exercise 2 - Excercise 2 ](exercises/Exercise_2_SAP_HANA_STUDIO)
+Continue to - [Exercise 2 - Excercise 2 ](/exercises/exercises/Exercise_2_SAP_HANA_STUDIO)

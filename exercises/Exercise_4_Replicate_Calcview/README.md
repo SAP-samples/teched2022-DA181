@@ -62,4 +62,4 @@ Once the selection is done, click "Step 2" to move to the second step
 ## Summary
 You have now setup replication of calculation view from on-premise to SAP HANA Cloud, from both schema and hdi container based.
 
-Continue to - [Exercise 5 - Excercise 5 ](exercises/Exercise_5_SAP_BAS)
+Continue to - [Exercise 5 - Excercise 5 ](/exercises/Exercise_5_SAP_BAS)

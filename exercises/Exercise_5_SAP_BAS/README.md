@@ -233,4 +233,4 @@ If you want to refer to an objects outside of your project you need to define sy
   ## Summary
 You have are extending the calculation view that was replicated from the on-premise in SAP HANA Cloud
 
-Continue to - [Exercise 6 - Excercise 6 ](exercises/Exercise_6_Modify_And_Appy)
+Continue to - [Exercise 6 - Excercise 6 ](/exercises/Exercise_6_Modify_And_Appy)

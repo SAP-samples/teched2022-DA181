@@ -44,4 +44,4 @@ The calculation views are deployed to your database.
 ## Summary
 You have now imported a calculation view model migrated for XSA
 
-Continue to - [Exercise 4 - Excercise 4 ](exercises/Exercise_4_Replicate_Calcview)
+Continue to - [Exercise 4 - Excercise 4 ](/exercises/exercises/Exercise_4_Replicate_Calcview)
