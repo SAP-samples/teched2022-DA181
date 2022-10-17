@@ -239,3 +239,8 @@ This filter will remove records with values in column "ProductName" that corresp
 
 
 The calculation view database object has now been generated and can be used.
+
+## Summary
+You have now created a calculation view model using the base tables imported using SAP HANA Studio.
+
+Continue to - [Exercise 3 - Excercise 3 ](exercises/Exercise_3_SAP_WEBIDE)

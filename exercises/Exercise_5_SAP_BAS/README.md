@@ -229,3 +229,8 @@ If you want to refer to an objects outside of your project you need to define sy
   - Redeploy the view by clicking at the rocket icon or using the keyboard-shortcut of holding down key "CTRL" and pressing key "d"
 
   - Start a new data preview to check that the values are now sorted by "countFrequency"
+
+  ## Summary
+You have are extending the calculation view that was replicated from the on-premise in SAP HANA Cloud
+
+Continue to - [Exercise 6 - Excercise 6 ](exercises/Exercise_6_Modify_And_Appy)

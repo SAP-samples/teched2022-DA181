@@ -40,3 +40,8 @@ Creating the same calculation views in SAP Web IDE would look very similar to cr
 - Press "Save", and right-click again on folder "db" to start the build process
 
 The calculation views are deployed to your database.
+
+## Summary
+You have now imported a calculation view model migrated for XSA
+
+Continue to - [Exercise 4 - Excercise 4 ](exercises/Exercise_4_Replicate_Calcview)

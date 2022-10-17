@@ -37,3 +37,6 @@ The columns of TLOGF_H are now mapped to the output columns based on name corres
 The modified database object has been created. 
 
 We will have a look at the impact of this modification on the replication next.
+
+## Summary
+You have now modified the calculation view model from the on-premise side and the changes be applied to the SAP HANA Cloud side
