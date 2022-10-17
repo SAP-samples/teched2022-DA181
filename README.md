@@ -35,11 +35,12 @@ To follow this exercise, outside the live event, the SAP HANA Platform will not 
 
 ## Exercises
 
-- [Calculation view modeling with SAP HANA Studio](exercises/Steps_SAP_HANA_STUDIO/)
-- [Calculation view modeling with SAP Web IDE](exercises/Steps_SAP_WEBIDE/)
-- [Setup Replication from SAP HANA Platform to SAP HANA Cloud](exercises/ex2/)
-- [Calcview Modeling with Business Application Studio](exercises/Steps_SAP_BAS/)
-- [Modify Calculation view and trigger update to SAP HANA Cloud](exercises/Steps_SAP_BAS/)
+- [Exercise 1 - Data Preparation](exercises/Exercise_1_Setup/)
+- [Exercise 2 - Calculation view modeling with SAP HANA Studio](exercises/Exercise_2_SAP_HANA_STUDIO/)
+- [Exercise 3 - Calculation view modeling with SAP Web IDE](exercises/Exercise_3_SAP_WEBIDE/)
+- [Exercise 4 - Setup Replication from SAP HANA Platform to SAP HANA Cloud](exercises/Exercise_4_Replicate_Calcview/)
+- [Exercise 5 - Calcview Modeling with Business Application Studio](exercises/Exercise_5_SAP_BAS/)
+- [Exercise 6 - Modify Calculation view and trigger update to SAP HANA Cloud](exercises/Exercise_6_Modify/)
 
 ## How to install and setup the SAP HANA Platform after TechEd live workshop
 - Installation of [SAP HANA Clients](https://developers.sap.com/tutorials/hana-clients-install.html)

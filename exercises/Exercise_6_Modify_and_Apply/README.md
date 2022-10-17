@@ -1,4 +1,4 @@
-# Modification steps in SAP WebIDE
+# Exercise 6 - Modification calculation view on-premise and apply to SAP HANA Cloud
 
 We will modify calculation view "COMBINESOURCESFORBASKETANALYSIS" to illustrate the replication behavior after a change to the source.
 
@@ -6,15 +6,15 @@ We will modify calculation view "COMBINESOURCESFORBASKETANALYSIS" to illustrate 
 
 - Open calculation view "COMBINESOURCESFORBASKETANALYSIS" by double-clicking on the respective file on the left. If the file is not visible, open the db/src tree first:
 
-    ![open COMBINESOURCESFORBASKETANALYSIS](./screenshots/openCOMBINESOURCESFORBASKETANALYSIS.png)
+    ![open COMBINESOURCESFORBASKETANALYSIS](./images/openCOMBINESOURCESFORBASKETANALYSIS.png)
 
 - Click on node "Union_1" so that the additional icons appear and select the plus sign to add a datasource:
 
-    ![add datasource](./screenshots/addDataSource.png)
+    ![add datasource](./images/addDataSource.png)
 
 - In the Add Data Source dialog, search for "TLOG", select "TLOGF_H" and press "Finish":
 
-    ![add TLOGF_H](./screenshots/addTLOGF_H.png)
+    ![add TLOGF_H](./images/addTLOGF_H.png)
 
 "TLOGF_H" is now added to your union node
 
@@ -22,18 +22,21 @@ We will modify calculation view "COMBINESOURCESFORBASKETANALYSIS" to illustrate 
 
 - Click button "Auto Map by Name":
 
-    ![auto map by name](./screenshots/autoMapByNameWebIDE.png)
+    ![auto map by name](./images/autoMapByNameWebIDE.png)
 
 The columns of TLOGF_H are now mapped to the output columns based on name correspondence
 
 - save the calculation view by pressing the icon on the top left:
 
-    ![save](./screenshots/save.png)
+    ![save](./images/save.png)
 
 - Right-click on calculation view file COMBINESOURCESFORBASKETANALYSIS and select "Build" and then "Build Selected Files"
 
-    ![build selected files](./screenshots/buildSelectedFiles.png)
+    ![build selected files](./images/buildSelectedFiles.png)
 
 The modified database object has been created. 
 
 We will have a look at the impact of this modification on the replication next.
+
+## Summary
+You have now modified the calculation view model from the on-premise side and the changes be applied to the SAP HANA Cloud side
