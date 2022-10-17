@@ -25,7 +25,7 @@ Again we will take a short-cut and grant the privileges to all database projects
     ![open database explorer](./images/openDatabaseExplorer.png)
 
 - in Database Explorer: Right-click on your DBADMIN database connection and choose "Open SQL Console":
-  
+
   ![open SQL console](./images/openSQLConsoleBAS.png)
 
 - paste the following SQL statements into the console:
@@ -63,8 +63,8 @@ We will work in a project that we create from a template:
 
   - Enter your Cloud Foundry email-address and password in the respective fields
 
-  - Select your Org and Space and press "Finish". 
-  
+  - Select your Org and Space and press "Finish".
+
   The creation will take a couple of minutes to finish. When the project is ready, the screen will be reloaded and you see a tree-structure on the left.
 
 
@@ -164,7 +164,7 @@ If you want to refer to an objects outside of your project you need to define sy
 
        ![create input parameter](./images/createInputParameter.png)
 
-    - click on the input parameter and enter the values as shown in the screenshot. 
+    - click on the input parameter and enter the values as shown in the screenshot.
       In particular:
         - Name: filterProduct
         - Label: filter for the product in question   
@@ -185,7 +185,7 @@ If you want to refer to an objects outside of your project you need to define sy
   ![parameter mapping](./images/parameterMapping.png)
 
   - Connect the input parameter "selectedProduct" of the source calculation view to the input parameter "filterProduct" of the current view:
-  
+
     - Click with the left mouse button on the input parameter on the left and hold the mouse button down
     - Move the mouse to the input parameter on the right and release the mouse button
 
@@ -219,7 +219,7 @@ If you want to refer to an objects outside of your project you need to define sy
 - If you want to sort the values by "countFrequency":
 
   - In tab "Columns" of the Details of node "Semantics", select icon "Sort Result Set"
-    
+
     - click on the plus-sign to add a sort criterion
 
     - choose "countFrequency" as the sort criterion and "Descending" as the Sort Direction
