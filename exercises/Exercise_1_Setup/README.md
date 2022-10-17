@@ -60,11 +60,11 @@ For TechEd participants, the reference table and data will be provided in the BA
 
 - In the File menu, choose "Import":
 
-  ![import tables](./screenshots/import.png)
+  ![import tables](./images/import.png)
 
 - Select "Catalog Objects" and press "Next":
 
-  ![select catalog objects](./screenshots/selectCatalogObjects.png)
+  ![select catalog objects](./images/selectCatalogObjects.png)
 
 - Choose option "Import catalog objects from current client" and use the "Browse" button to navigate to the extracted folder that contains the folder "index". Select this folder.
 
@@ -78,7 +78,7 @@ For TechEd participants, the reference table and data will be provided in the BA
 
 - select the option to include data but keep the other options unselected:
 
-  ![include data in import](./screenshots/includeData.png)
+  ![include data in import](./images/includeData.png)
 
 - press "Finish"
 The tables have now been imported with data.
@@ -101,7 +101,7 @@ The tables have now been imported with data.
 
   - Choose "Import Catalog Objects":
 
-    ![import catalog objects](./screenshots/importCatalogObjects.png)
+    ![import catalog objects](./images/importCatalogObjects.png)
 
 
 - Use the "Browse" button to select your local version of [BASKETANALYIS_TABLES_DatabaseExplorer](exercises/resources/BASKETANALYIS_TABLES_DatabaseExplorer.tar.gz")
@@ -110,7 +110,7 @@ The tables have now been imported with data.
 
     - Start the import process by pressing "Import":
 
-    ![import tables](./screenshots/importTables.png)
+    ![import tables](./images/importTables.png)
 The tables have now been imported with data.
 </p>
 </details>

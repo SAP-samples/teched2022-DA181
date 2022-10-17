@@ -18,17 +18,17 @@ In this exercise, we will replicate the calculation views modeling and/or import
 
 - Once the SAP HANA database is running, right click on the actions and select "Open in SAP HANA Cockpit" menu
 
-  <BR /><BR /><CENTER><img src="./screenshots/OpenCockpit.png" width="90%"></CENTER><BR /><BR />
+  <BR /><BR /><CENTER><img src="./images/OpenCockpit.png" width="90%"></CENTER><BR /><BR />
 
 - Login with DBADMIN
 - In the Monitoring views, locate the "Connections to SAP HANA Cloud" card and select "Create Replication" to start the Replication Service wizard for replicating the calculation views
 
-  <BR /><BR /><CENTER><img src="./screenshots/ConnectionsToSAPHANA.png" width="400"></CENTER><BR /><BR />
+  <BR /><BR /><CENTER><img src="./images/ConnectionsToSAPHANA.png" width="400"></CENTER><BR /><BR />
 
 - "Create New Replication" wizard starts and the first step is to select the connection type of the source system. First, we will choose "Create a New Connection" which is already selected and select "SAP HANA 2.0 On-Premise" as the source system will will connect during the live workshop is SAP HANA 2.0 SPS06. This will use the remote table replication which is HANA native replication between HANA systems. For SPS04 or lower, as remote table replication is not supported, SDI will be used for replicating.
 Once the selection is done, click "Step 2" to move to the second step
 
-  <BR /><BR /><CENTER><img src="./screenshots/ConnectionType.png" width="90%"></CENTER><BR /><BR />
+  <BR /><BR /><CENTER><img src="./images/ConnectionType.png" width="90%"></CENTER><BR /><BR />
 
 - Next, setup the connection properties to the on-premise SAP HANA Platform. 
   - Enter name for the connection. The connection will be created as a remote source within the database
@@ -38,7 +38,7 @@ Once the selection is done, click "Step 2" to move to the second step
   - Next enter the technical user to connect to the on-premise HANA database
   - Click "Create Connection" button once the property information have been entered to create the remote source in the background. Once the remote source is created, the wizard will show the status and move to the next step
 
-  <BR /><BR /><CENTER><img src="./screenshots/CreateConnection.png" width="90%"></CENTER><BR /><BR />
+  <BR /><BR /><CENTER><img src="./images/CreateConnection.png" width="90%"></CENTER><BR /><BR />
 
 - Next step is to select the schema owner where the table data exists. 
   - Normally, the table where the schema resides are default schema where the name of the owner and the schema name is identical. But there are cases where the owner could be different as the owner may have used 'CREATE SCHEMA <schema_name>' where the <schema_name> is not a DB user. So, in this step, select the right owner. If the owner is not listed, it means that the technical user doesn't have the privilege on the schema to be replicated.
@@ -48,15 +48,15 @@ Once the selection is done, click "Step 2" to move to the second step
   - For repository based calculation view, select "BasketAnalysis/COMBINESOURCEFORBASKETANALYSIS" object which is the top level calculation view
   - Click "Confirm" button to start getting the metadata of the selected object and start building up the dependency tree.
 
-  <BR /><BR /><CENTER><img src="./screenshots/ReplicationObjects.png" width="90%"></CENTER><BR /><BR />
+  <BR /><BR /><CENTER><img src="./images/ReplicationObjects.png" width="90%"></CENTER><BR /><BR />
 
 - As the Replication Service reads the remote metadata, the selected object will be shown in the monitoring view and status will be in loading state with esclamation icon to display the status of the replication
 
-  <BR /><BR /><CENTER><img src="./screenshots/StatusLoading.png" width="400"></CENTER><BR /><BR />
+  <BR /><BR /><CENTER><img src="./images/StatusLoading.png" width="400"></CENTER><BR /><BR />
 
   - Clicking on the esclamation icon will display a popup dialog showing the status of replication or load.
 
-  <BR /><BR /><CENTER><img src="./screenshots/StatusLoading.png" width="400"></CENTER><BR /><BR />
+  <BR /><BR /><CENTER><img src="./images/StatusLoading.png" width="400"></CENTER><BR /><BR />
   
 
 ## Summary

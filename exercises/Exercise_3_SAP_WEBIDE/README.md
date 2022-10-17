@@ -13,29 +13,29 @@ Creating the same calculation views in SAP Web IDE would look very similar to cr
 
 - In Menu "File", choose "Import", "File or Project"
 
-    ![import zip file](./screenshots/importZip.png)
+    ![import zip file](./images/importZip.png)
 
 - Use the Browse button to search for your local file "TECHED_2022.zip" (you can download it from the "resources" section), click on "Open" and confirm with "OK"
 
-    ![import dialog zip file](./screenshots/importDialogZip.png)
+    ![import dialog zip file](./images/importDialogZip.png)
 
 - Right-click on folder "db" and choose "Build", and "Build" again
 
-    ![build project](./screenshots/buildProject.png)
+    ![build project](./images/buildProject.png)
 
 - If you get an error message saying that no space is defined, press the "Configure Settings" button and select a space
 
 - If no builder has been installed before, install the builder by pressing "Install Builder" (you won't see this button, if a Builder has already been installed)
 
-    ![space setting](./screenshots/spaceSetting.png)
+    ![space setting](./images/spaceSetting.png)
 
     - Wait for the progess status for installing the builder to finish in the lower right corner:
 
-        ![progress  install builder](./screenshots/installBuilderProgressBar.png)
+        ![progress  install builder](./images/installBuilderProgressBar.png)
 
     - you should see a success message for the builder:
 
-        ![builder successfully installed](./screenshots/builderInstallSuccess.png)
+        ![builder successfully installed](./images/builderInstallSuccess.png)
 
 - Press "Save", and right-click again on folder "db" to start the build process
 
