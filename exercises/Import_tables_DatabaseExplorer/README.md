@@ -3,9 +3,18 @@
 <mark> You only need to follow these steps if you don't have a running SAP HANA Studio </mark>
 
 
-- Open SAP HANA Database Explorer
+- Open SAP HANA Database Explorer. The detail connection info will be given during TechEd Live Virtual Workshop
 
-- Use a database connection with database user SYSTEM
+- As the database instance is not registered, you would need to register the connection info in the "Add Instance" dialog window
+
+- Select "SAP HANA Database (Multitenant)" for the instance type
+
+- Enter host info
+  - For users attending the live virtual workshop, the connection info will be provided during the workshop. 
+    - Use a database connection with the database user assigned during the workshop
+  - For users attending after the workshop, please connect to the local HANA instance
+    - Use the system user to connect
+
 
 - Expand the connection and righ-click on "Catalog"
 
