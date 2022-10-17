@@ -235,4 +235,4 @@ If you want to refer to an objects outside of your project you need to define sy
 ## Summary
 You have are extending the calculation view that was replicated from the on-premise in SAP HANA Cloud
 
-Continue to - [Exercise 6 - Modification calculation view on-premise and apply to SAP HANA Cloud](/exercises/Exercise_6_Modify_and_Appy)
+Continue to - [Exercise 6 - Modification calculation view on-premise and apply to SAP HANA Cloud](/exercises/Exercise_6_Modify_and_Apply/)
