@@ -1,4 +1,4 @@
-# Steps in SAP HANA Studio
+# Exercise 2 - Calculation view modeling in SAP HANA Studio
 
 
 > If you don't have SAP HANA Studio already installed and configured then you can skip this section. Please skip to the next [exercise](exercises/Step_3_SAP_WEBIDE/) 
@@ -243,4 +243,4 @@ The calculation view database object has now been generated and can be used.
 ## Summary
 You have now created a calculation view model using the base tables imported using SAP HANA Studio.
 
-Continue to - [Exercise 3 - Excercise 3 ](/exercises/Exercise_3_SAP_WEBIDE)
+Continue to - [Exercise 3 - Calculation view modeling in SAP Web IDE](/exercises/Exercise_3_SAP_WEBIDE)

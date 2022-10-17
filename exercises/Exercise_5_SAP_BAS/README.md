@@ -1,13 +1,15 @@
-# Prerequisites
+# Exercise 5 - Extending replicated calculation view in BAS
+
+## Prerequisites
 
 - a connection in Database Explorer to a running SAP HANA Cloud instance to which the calculation views have been replicated. This connection should use database user DBADMIN
 - a user in BAS who is allowed to deploy to a cloud foundry space in which the HANA Cloud instance is running
 
-# Steps in BAS to build calculation views on top of the replicated views
+## Steps in BAS to build calculation views on top of the replicated views
 
 We will now create a calculation view on top of the replicated calculation view "BASKETANALYIS_CALCULATE". To do so we first need to ensure that we are authorized to use "BASKETANALYIS_CALCULATE" in our HDI container.
 
-## Grant authorizations to use calculation view "BASKETANALYIS_CALCULATE" in calculation views
+### Grant authorizations to use calculation view "BASKETANALYIS_CALCULATE" in calculation views
 
 Again we will take a short-cut and grant the privileges to all database projects in BAS. Typically, a more fine granular authorization is used. See e.g., [FAQs](https://blogs.sap.com/2019/11/13/faq-modeling-in-web-ide/).
 
@@ -39,7 +41,7 @@ Again we will take a short-cut and grant the privileges to all database projects
 
 All Business Application Studio projects can now make use of the replicated views.
 
-## Create a project in Business Application Studio
+### Create a project in Business Application Studio
 
 We will work in a project that we create from a template:
 
@@ -66,7 +68,7 @@ We will work in a project that we create from a template:
   The creation will take a couple of minutes to finish. When the project is ready, the screen will be reloaded and you see a tree-structure on the left.
 
 
-## Create synonyms
+### Create synonyms
 If you want to refer to an objects outside of your project you need to define synonyms for these objects. We will create synonyms for our replicated calculation views next:
 
 - In your Workspace: Navigate to folder "src", right-click on "src" and choose "New File"
@@ -91,7 +93,7 @@ If you want to refer to an objects outside of your project you need to define sy
 
   ![rocket icon](./images/rocket.png)
 
-## Create calculation view "basketAnalysisEndUser"
+### Create calculation view "basketAnalysisEndUser"
 
 - In your workspace: Navigate to folder "src", right-click on "src" and choose "New File"
 
@@ -191,14 +193,14 @@ If you want to refer to an objects outside of your project you need to define sy
 
     ![mapped input parameters](./images/mappedInputParameters.png)
 
-## Deploy the calculation view
+### Deploy the calculation view
 
 - deploy the calculation view with the rocket icon on the top right:
 
   ![rocket icon](./images/rocket.png)
 
 
-## Run a data preview
+### Run a data preview
 
 - Right-click on node Aggregation and choose "Data Preview"
 
@@ -230,7 +232,7 @@ If you want to refer to an objects outside of your project you need to define sy
 
   - Start a new data preview to check that the values are now sorted by "countFrequency"
 
-  ## Summary
+## Summary
 You have are extending the calculation view that was replicated from the on-premise in SAP HANA Cloud
 
-Continue to - [Exercise 6 - Excercise 6 ](/exercises/Exercise_6_Modify_And_Appy)
+Continue to - [Exercise 6 - Modification calculation view on-premise and apply to SAP HANA Cloud](/exercises/Exercise_6_Modify_And_Appy)

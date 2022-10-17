@@ -1,4 +1,4 @@
-# Setup Replication from SAP HANA Platform to SAP HANA Cloud
+# Exercise 4 - Setup calculation view replication from SAP HANA Platform to SAP HANA Cloud
 
 In this exercise, we will replicate the calculation views modeling and/or imported from the previous exercises. 
 - The first exercise was modeling using SAP HANA Studio and the models are saved in repository and the calculation view is created in schema.
@@ -62,4 +62,4 @@ Once the selection is done, click "Step 2" to move to the second step
 ## Summary
 You have now setup replication of calculation view from on-premise to SAP HANA Cloud, from both schema and hdi container based.
 
-Continue to - [Exercise 5 - Excercise 5 ](/exercises/Exercise_5_SAP_BAS)
+Continue to - [Exercise 5 - Extending replicated calculation view in BAS](/exercises/Exercise_5_SAP_BAS)

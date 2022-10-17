@@ -1,4 +1,4 @@
-# Modification steps in SAP WebIDE
+# Exercise 6 - Modification calculation view on-premise and apply to SAP HANA Cloud
 
 We will modify calculation view "COMBINESOURCESFORBASKETANALYSIS" to illustrate the replication behavior after a change to the source.
 
