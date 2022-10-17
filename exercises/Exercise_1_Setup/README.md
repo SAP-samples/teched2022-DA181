@@ -1,4 +1,4 @@
-# Initial Setup 
+# Exercise 1 - Initial Setup 
 
 ## Prerequisites
 A few housekeeping is needed for this workshop.
