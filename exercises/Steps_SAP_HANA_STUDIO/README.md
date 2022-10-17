@@ -239,7 +239,7 @@ This calculation view will prepare the data so they can be used for basked analy
 
 #### Add count distinct column
 
-- In node "Semantics", right-click on "Calculated Columns" and choose "New Counter":
+- In node "Aggregation", right-click on "Calculated Columns" and choose "New Counter":
 
   ![new counter](./screenshots/newCounter.png)
 
