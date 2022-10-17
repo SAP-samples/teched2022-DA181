@@ -1,62 +1,12 @@
 # Steps in SAP HANA Studio
 
-## Prerequisites
 
-- a running SAP HANA Studio with a connection to a running SAP HANA Database
-  - For users attending the TechEd 2022 Virtual Live Workshop, a connection info will be provided
-  - For users attending after the event, a local HANA Platform (express edition) is needed. Please follow the [installation instruction](https://developers.sap.com/group.hxe-install-vm-xsa.html)
-  
-- database user to connect is needed 
-  - For users attending the TechEd 2022 Virtual Live Workshop, a user will be assigned.
-  - For users attending after the event, a system user can be used after the TechEd Live Workshop
-
-</br>
-</br>
-
-> <mark> If you have no running SAP HANA Studio then you can skip this section. To import the tables that are needed for the other sections without using SAP HANA Studio, please follow the steps outlined in "Import_tables_DatabaseExplorer". </mark>
+> If you don't have SAP HANA Studio already installed and configured then you can skip this section. Please skip to the next [exercise](exercises/Step_3_SAP_WEBIDE/) 
 
 
 In the following steps two calculation views are created from scratch that will later be replicated to SAP HANA Cloud. These models use data of up to three tables. Therefore, these tables are imported first. Afterwards authorizations are granted to use the tables in calculation view modeling
 
-> In the following database user SYSTEM is used. Typically dedicated users with the respective authorizations would be used in real-world scenarios. By using database user SYSTEM we skip these authorization steps to focus on the replication part which is the focus of this session
-
 </br>
-
-
-## Import tables required by the calculation views and assign required authorizations
-
-### Extract zip file that contains tables
-
-On your computer, download and extract the [BASKETANALSYS_TABLES.zip](exercises/resources/BASKETANALSYS_TABLES.zip.zip) file. You will need the location of the extracted folder that contains folder "index" later.
-
-
-### Import tables
-
-- In the File menu, choose "Import":
-
-  ![import tables](./screenshots/import.png)
-
-- Select "Catalog Objects" and press "Next":
-
-  ![select catalog objects](./screenshots/selectCatalogObjects.png)
-
-- Choose option "Import catalog objects from current client" and use the "Browse" button to navigate to the extracted folder that contains the folder "index". Select this folder.
-
-  > Do not select the folder "index" itself but the folder containing it.
-
-- select all three tables by clicking at them with the left mouse button
-
-- choose "Add" to select them for import 
-
-- press "Next"
-
-- select the option to include data but keep the other options unselected:
-
-  ![include data in import](./screenshots/includeData.png)
-
-- press "Finish"
-
-The tables have now been imported with data.
 
 ### Assign authorizations to use the tables for calculation view modeling
 
@@ -86,9 +36,11 @@ The required tables have been imported and the authorizations assigned. In the n
 
 We will create two calculation view models. The first combines the two tables in a Union node. The second one joins the tables to enable a basket analysis of the data.
 
-### Create package BASKETANALYSIS
+### Create package BASKETANALYSISXX
 
 A package helps structuring your development objects. 
+
+> The instance is a shared instance during the live virtual workshop
 
 - To create a package, right-click on "Content", select "New" and "Package"
 
