@@ -17,16 +17,16 @@ In the following steps two calculation views are created from scratch that will 
 - In the opened SQL console, type:
 
   ```SQL
-  GRANT SELECT ON SCHEMA BASKETANALYSISDATA TO _SYS_REPO WITH GRANT OPTION;
-  GRANT SELECT ON SCHEMA BASKETANALYSISDATA TO "_SYS_DI#SYS_XS_HANA_BROKER"."_SYS_DI_OO_DEFAULTS" WITH GRANT OPTION;
-  GRANT SELECT ON SCHEMA BASKETANALYSISDATA TO "SYS_XS_HANA_BROKER"."RT_DEFAULTS";
+  GRANT SELECT ON SCHEMA TECHEDUSERXX TO _SYS_REPO WITH GRANT OPTION;
+  GRANT SELECT ON SCHEMA TECHEDUSERXX TO "_SYS_DI#SYS_XS_HANA_BROKER"."_SYS_DI_OO_DEFAULTS" WITH GRANT OPTION;
+  GRANT SELECT ON SCHEMA TECHEDUSERXX TO "SYS_XS_HANA_BROKER"."RT_DEFAULTS";
   ```
 
 - mark all statements with your mouse and execute the highlighted statements by pressing the "Execute" button on the top-right:
 
   ![execute SQL statement](./images/execute.png)
 
-  The first line allows using the tables in schema BASKETANALYSISDATA for calculation view modeling in SAP HANA Studio. The other two lines allow using the tables in every Web IDE project.
+  The first line allows using the tables in schema TECHEDUSERXX for calculation view modeling in SAP HANA Studio. The other two lines allow using the tables in every Web IDE project.
 
   > Typically, not all projects should have the authorization to use certain tables and a more fine-granular authorization setup is used. How this can be achieved with HDI development can be found e.g., in this [blog](https://blogs.sap.com/2018/12/11/how-to-use-objects-contained-in-a-schema-outside-of-your-web-ide-full-stack-project-in-sap-hana-service/).
 
