@@ -212,9 +212,9 @@ If you want to refer to an objects outside of your project you need to define sy
 
     ![execute data preview](./images/executeDataPreview.png)
 
-- To display the products that were sold together with the selected product (if you keep the default: with "Dark Blue Jeans") select option "Raw Data":
+- To display the products that were sold together with the selected product (if you keep the default: with "Dark Blue Jeans"), drag and drop attribute "ProductName" to the "Label Axis" and measure "countFrequency" to the "Value Axis":
 
-  ![basket analysis result](./images/result.png)
+  ![basket analysis result](./images/result2.png)
 
 - If you want to sort the values by "countFrequency":
 
@@ -230,7 +230,9 @@ If you want to refer to an objects outside of your project you need to define sy
 
   - Redeploy the view by clicking at the rocket icon or using the keyboard-shortcut of holding down key "CTRL" and pressing key "d"
 
-  - Start a new data preview to check that the values are now sorted by "countFrequency"
+  - Start a new data preview to check that the values are now sorted by "countFrequency" by selecting tab "Raw Data":
+
+  ![basket analysis result](./images/result.png)
 
 ## Summary
 You have are extending the calculation view that was replicated from the on-premise in SAP HANA Cloud
