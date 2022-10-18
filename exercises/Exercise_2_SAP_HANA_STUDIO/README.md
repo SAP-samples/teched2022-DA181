@@ -1,7 +1,7 @@
 # Exercise 2 - Calculation view modeling in SAP HANA Studio
 
 
-> If you don't have SAP HANA Studio already installed and configured then you can skip this section. Please skip to the next [exercise](/exercises/Step_3_SAP_WEBIDE/) 
+> If you don't have SAP HANA Studio already installed and configured then you can skip this section. Please skip to the next [exercise](/exercises/Exercise_3_SAP_WEBIDE/) 
 
 
 In the following steps two calculation views are created from scratch that will later be replicated to SAP HANA Cloud. These models use data of up to three tables. Therefore, these tables are imported first. Afterwards authorizations are granted to use the tables in calculation view modeling
