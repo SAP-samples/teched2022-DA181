@@ -9,7 +9,7 @@ A few housekeeping is needed for this workshop.
 
 - database user to connect is needed
   - For users attending the TechEd 2022 Virtual Live Workshop, a user will be assigned to each participant
-  - For users attending after the event, a system user can be used after the TechEd Live Workshop
+  - For users attending after the event, database users need to be created
 
 ## User Creation and Grant Privileges
 
@@ -19,7 +19,7 @@ There will be 2 users assigned to each participants for this workshop which will
 
 >XX will be a number assigned during the live virtual workshop event. Please make sure that you are only using the assigned user so that it will not interfer with others
 
-<details><summary><mark>If you are following this tutorial after the live event, please create 2 users in the tenant database connected with SYSTEM user</mark></summary>
+<details><summary><mark>If you are following this tutorial after the live event, please create these 2 users in the tenant database connected with SYSTEM user</mark></summary>
 <p>
 
   ```SQL
@@ -37,6 +37,23 @@ Once the user have been assigned or created, login as the user TECHEDUSERXX and 
   ```SQL
   GRANT SELECT ON SCHEMA TECHEDUSERXX TO TECHEDCONNXX;
   ```
+
+To later use tables in schema "TECHEDUSERXX" for modeling in SAP HANA Studio, execute the following grant statement:
+
+  ```SQL
+  GRANT SELECT ON SCHEMA TECHEDUSERXX TO _SYS_REPO WITH GRANT OPTION;
+```
+
+To later use tables in schema "TECHEDUSERXX" for modeling in SAP Web IDE, execute the following grant statements:
+ ```SQL
+  GRANT SELECT ON SCHEMA TECHEDUSERXX TO "_SYS_DI#SYS_XS_HANA_BROKER"."_SYS_DI_OO_DEFAULTS" WITH GRANT OPTION;
+  GRANT SELECT ON SCHEMA TECHEDUSERXX TO "SYS_XS_HANA_BROKER"."RT_DEFAULTS";
+  ```
+
+With these two GRANT statements every SAP Web IDE project can create calculation views on top of tables in schema "TECHEDUSERXX".
+
+  > Typically, not all projects should have the authorization to use certain tables and a more fine-granular authorization setup is used. How this can be achieved with HDI development can be found e.g., in this [blog](https://blogs.sap.com/2018/12/11/how-to-use-objects-contained-in-a-schema-outside-of-your-web-ide-full-stack-project-in-sap-hana-service/).
+
 
 ## Setup base tables and data
 
