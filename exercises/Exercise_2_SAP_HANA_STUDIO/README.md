@@ -223,7 +223,28 @@ This filter will remove records with values in column "ProductName" that corresp
 
 The calculation view database object has now been generated and can be used.
 
+#### Run a data preview
+
+To check the output of the calculation view:
+
+- right-click on node "Aggregation" and choose "Data Preview":
+
+![data preview](./images/dataPreview.png)
+
+- when prompted for a value for input parameter "selectedProduct", enter "Dark Blue Jeans" in column "From" and press "OK":
+
+![input parameter values](./images/enterIPValue.png)
+
+- in tab "Analysis" drag and drop attribute "ProductName" to the "Labels axis" and measure "countFrequency" to the "Values axis"
+
+You see a visualization of the frequency of how often a product on the Labels axis has been bought together with the product "Dark Blue Jeans". "Dark Blue Jeans" is used as the reference product because it had been entered as the value of the input parameter. 
+
+For example, "Black Cotton Socks" were bought 115 times together with "Dark Blue Jeans":
+
+![visualization of data](./images/graphicalDisplay.png)
+
+
 ## Summary
-You have now created a calculation view model using the base tables imported using SAP HANA Studio.
+You have now created a calculation view model that analyses the frequency how often two products are sold together in the same transaction (basket).
 
 Continue to - [Exercise 3 - Calculation view modeling in SAP Web IDE](/exercises/Exercise_3_SAP_WEBIDE)
