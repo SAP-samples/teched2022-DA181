@@ -58,9 +58,9 @@ The synonyms of the imported project are pointing to schema "BASKETANALYSISDATA"
 
 The calculation views are deployed to your database.
 
-## Grant Privileges to SELECT on the calculation views to database user TECHEDUSERXX
+## Grant Privileges to SELECT on the calculation views to database user TECHEDCONXX
 
-For the replication to SAP HANA Cloud user TECHEDUSERXX requires privilege SELECT on the respective calculation views. We will grant SELECT on the schema of the HDI container (for details see e.g., [grant select on HDI container schema](https://help.sap.com/docs/HANA_CLOUD_DATABASE/c2cc2e43458d4abda6788049c58143dc/14ccad20b2b64190b269a488e0f44cbc.html?locale=en-US)):
+For the replication to SAP HANA Cloud user TECHEDCONXX requires privilege SELECT on the respective calculation views. We will grant SELECT on the schema of the HDI container (for details see e.g., [grant select on HDI container schema](https://help.sap.com/docs/HANA_CLOUD_DATABASE/c2cc2e43458d4abda6788049c58143dc/14ccad20b2b64190b269a488e0f44cbc.html?locale=en-US)):
 
 - Right-click on the db-folder and select "Open HDI Container":
 
@@ -88,27 +88,27 @@ For the replication to SAP HANA Cloud user TECHEDUSERXX requires privilege SELEC
         ```SQL
         SET SCHEMA <current_user>;
         CREATE LOCAL TEMPORARY COLUMN TABLE #PRIVILEGES LIKE _SYS_DI.TT_SCHEMA_PRIVILEGES; 
-        INSERT INTO #PRIVILEGES ( PRIVILEGE_NAME, PRINCIPAL_SCHEMA_NAME, PRINCIPAL_NAME ) VALUES ( 'SELECT', '', '<TECHEDUSERXX>' );
+        INSERT INTO #PRIVILEGES ( PRIVILEGE_NAME, PRINCIPAL_SCHEMA_NAME, PRINCIPAL_NAME ) VALUES ( 'SELECT', '', '<TECHEDCONXX>' );
         CALL <current_schema>#DI.GRANT_CONTAINER_SCHEMA_PRIVILEGES( #PRIVILEGES, _SYS_DI.T_NO_PARAMETERS, ?, ?, ?);
         DROP TABLE #PRIVILEGES;
         ```
 
     - Replace \<current_user\> and \<current_schema\> with the values from the previous statement
 
-    - Replace \<TECHEDUSERXX\> with your user name. 
+    - Replace \<TECHEDCONXX\> with your connection user name. 
 
         The result should look similar to:
             
         ```SQL
         SET SCHEMA TECHED_2022_HDI_DB_1_727P5XNC3UZGJOFPRH7CDI8VV_DT;
         CREATE LOCAL TEMPORARY COLUMN TABLE #PRIVILEGES LIKE _SYS_DI.TT_SCHEMA_PRIVILEGES; 
-        INSERT INTO #PRIVILEGES ( PRIVILEGE_NAME, PRINCIPAL_SCHEMA_NAME, PRINCIPAL_NAME ) VALUES ( 'SELECT', '', 'TECHEDUSERXX' );
+        INSERT INTO #PRIVILEGES ( PRIVILEGE_NAME, PRINCIPAL_SCHEMA_NAME, PRINCIPAL_NAME ) VALUES ( 'SELECT', '', 'TECHEDCONXX' );
         CALL TECHED_2022_HDI_DB_1#DI.GRANT_CONTAINER_SCHEMA_PRIVILEGES( #PRIVILEGES, _SYS_DI.T_NO_PARAMETERS, ?, ?, ?);
         DROP TABLE #PRIVILEGES;
         ```
     - Mark the statements with the mouse and press the green arrow on the top left to run the marked statements
 
-User TECHEDUSERXX has now SELECT privileges on the HDI container schema and therefore also on the calculation views that are deployed into it.
+User TECHEDCONXX has now SELECT privileges on the HDI container schema and therefore also on the calculation views that are deployed into it.
 
 ## Summary
 You have now created the database objects of your calculation view models that had been migrated from the deprecated repository to HDI and assigned the neccessary authorizations to replicate the models to SAP HANA Cloud.
