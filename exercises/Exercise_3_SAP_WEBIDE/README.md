@@ -2,7 +2,7 @@
 
 ## Prerequisites
 
-- a running SAP Web IDE that is connected to the same SAP HANA database that was used for the SAP HANA Studio steps
+- a running SAP Web IDE that is connected to the same SAP HANA database into which the tables had been imported
 - a Web IDE user that is allowed to develop in a XSA space
 
 Creating the same calculation views in SAP Web IDE would look very similar to creating them in SAP HANA Studio. Therefore, we migrated the views using the [xs-migration assistant](https://help.sap.com/docs/SAP_HANA_PLATFORM/58d81eb4c9bc4899ba972c9fe7a1a115/5775fac4200441589c12a5421d0bcb1e.html) and provide you the migrated calculation views in a [zip file](/exercises/resources/TECHED_2022.zip).
@@ -18,6 +18,20 @@ Creating the same calculation views in SAP Web IDE would look very similar to cr
 - Use the Browse button to search for your local file "TECHED_2022.zip" (you can download it from the "resources" section), click on "Open" and confirm with "OK"
 
     ![import dialog zip file](./images/importDialogZip.png)
+
+## Point synonyms to schema TECHEDUSERXX
+
+The synonyms of the imported project are pointing to schema "BASKETANALYSISDATA". To redirect them to your schema:
+
+- Navigate to file "basketAnalysisData.hdblogicalschema"
+- Double-click on the file to open it
+- Change the schema value from "BASKETANALYSISDATA" to "TECHEDUSERXX":
+
+    ![change target schema](./images/changeTargetSchema.png)
+
+- save the changed file using the "Save" icon:
+
+    ![save modifications](./images/save.png)
 
 - Right-click on folder "db" and choose "Build", and "Build" again
 
