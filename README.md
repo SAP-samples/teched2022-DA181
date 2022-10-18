@@ -6,7 +6,7 @@ This repository contains the material for the SAP TechEd 2022 session called DA1
 
 ## Overview
 
-This session introduces attendees to extend their on-premise analytical workloads based on Calculation Views built with the deprecated repository or the new HANA deployment infrastructe (HDI). The attendees will be guided to model a simple Calculation View, select it from SAP HANA Cockpit in BTP and verify that the calculation view runtime a.k.a column views in SAP HANA Cloud are created. Attendees can utilize this column view within SAP Business Application Studio and extend utilizing the latest features offered by SAP HANA Cloud.
+This session introduces attendees to extend their on-premise analytical workloads \built as repository or HDI containers based calculation views. The attendees will be guided on how to model a simple Calculation View using SAP HANA Studio or SAP WebIDE, select it from SAP HANA Cockpit in BTP, and verify the calculation view runtime a.k.a column views in SAP HANA Cloud. The replicated calculation view can be extended and utilize the latest features offered by SAP HANA Cloud.
 
 ## Requirements
 
@@ -26,12 +26,12 @@ Some basic understanding of SAP HANA Platform Tooling
    - SAP HANA Studio (XSC)
    - SAP Web IDE (XSA)
 
-The following execises provide 2 tracks that can be done together or seperated based on the individual needs of the participants.
-   - Calculation view based on the deprecated repository using SAP HANA Studio (XSC)
-   - Calculation view based on HDI containers using SAP Web IDE (XSA) 
+The following exercises provide 2 tracks that can be done together or separated based on the individual needs of the participants.
+   - Calculation view based on database schema and repository (XSC) using SAP HANA Studio
+   - Calculation view based on HDI containers and Git (XSA) using SAP Web IDE
 
 A single SAP HANA Platform will be provided and shared between participants. Detailed server connection info will be provided during the TechEd Live event.
-To follow this exercise, outside the live event, the SAP HANA Platform will not be available and requires a SAP HANA Platform to be available acting as the source system. Also, in a normal corporate environment, the SAP HANA Platform will exist inside corporate firewalls and a cloud connector will be needed to create a network connection from SAP HANA Cloud in BTP to SAP HANA Platfrom on-premise. For simplicity of this workshop, we will bypass the configuration of the cloud connector during the live event.
+To follow this exercise, outside the live event, the SAP HANA Platform will not be available and requires a SAP HANA Platform to be available acting as the source system. Also, in a normal corporate environment, the SAP HANA Platform will exist inside corporate firewalls and a cloud connector will be needed to create a network connection from SAP HANA Cloud in BTP to SAP HANA Platform on-premise. For simplicity of this workshop, we will bypass the configuration of the cloud connector during the live event.
 
 ## Exercises
 
@@ -39,7 +39,7 @@ To follow this exercise, outside the live event, the SAP HANA Platform will not 
 - [Exercise 2 - Calculation view modeling with SAP HANA Studio](exercises/Exercise_2_SAP_HANA_STUDIO/)
 - [Exercise 3 - Calculation view modeling with SAP Web IDE](exercises/Exercise_3_SAP_WEBIDE/)
 - [Exercise 4 - Setup Replication from SAP HANA Platform to SAP HANA Cloud](exercises/Exercise_4_Replicate_Calcview/)
-- [Exercise 5 - Calcview Modeling with Business Application Studio](exercises/Exercise_5_SAP_BAS/)
+- [Exercise 5 - Calculation view modeling with Business Application Studio](exercises/Exercise_5_SAP_BAS/)
 - [Exercise 6 - Modify Calculation view and trigger update to SAP HANA Cloud](exercises/Exercise_6_Modify/)
 
 ## How to install and setup the SAP HANA Platform after TechEd live workshop

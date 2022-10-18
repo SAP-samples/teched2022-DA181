@@ -1,21 +1,21 @@
-# Exercise 1 - Initial Setup 
+# Exercise 1 - Initial Setup
 
 ## Prerequisites
 A few housekeeping is needed for this workshop.
 
 - a running SAP HANA Studio with a connection to a running SAP HANA Database
   - For users attending the TechEd 2022 Virtual Live Workshop, a connection info will be provided during the workshop
-  - For users attending after the event, a local HANA Platform (express edition) is needed. Please follow the [installation instruction](https://developers.sap.com/group.hxe-install-vm-xsa.html)
-  
-- database user to connect is needed 
+  - For users attending after the event, a local HANA Platform (express edition) is needed. Please follow the [installation instruction](https://developers.sap.com/group.hxe-install-vm-xsa.html) to install a VM image locally.
+
+- database user to connect is needed
   - For users attending the TechEd 2022 Virtual Live Workshop, a user will be assigned to each participant
   - For users attending after the event, database users need to be created
 
 ## User Creation and Grant Privileges
 
 There will be 2 users assigned to each participants for this workshop which will be assigned during the event
-    - TECHEDUSERXX is the user that contains the tables and data 
-    - TECHEDCONNXX is a technical user that will be used for connection from the SAP HANA Cloud to the on-prem SAP HANA Platform. 
+    - TECHEDUSERXX is the user that contains the tables and data
+    - TECHEDCONNXX is a technical user that will be used for connection from the SAP HANA Cloud to the on-prem SAP HANA Platform.
 
 >XX will be a number assigned during the live virtual workshop event. Please make sure that you are only using the assigned user so that it will not interfer with others
 
@@ -32,7 +32,7 @@ There will be 2 users assigned to each participants for this workshop which will
 </details>
 </br>
 
-Once the user have been created, login as the user TECHEDUSERXX and execute the following grants to allow the technical user access to the data 
+Once the user have been assigned or created, login as the user TECHEDUSERXX and execute the following grants to allow the technical user access to the data
 
   ```SQL
   GRANT SELECT ON SCHEMA TECHEDUSERXX TO TECHEDCONNXX;
@@ -57,19 +57,10 @@ With these two GRANT statements every SAP Web IDE project can create calculation
 
 ## Setup base tables and data
 
-For TechEd participants, the reference table and data will be provided in the BASKETANALYSISDATA schema as readonly. The tables needs to be created within each participants assigned schema.
+For TechEd participants, the reference table and data will be provided in the TECHEDUSERXX schema.
 
-  ```SQL
-  CREATE TABLE "TLOGF_C" LIKE "BASKETANALYSISDATA"."TLOGF_C";
-  CREATE TABLE "TLOGF_H" LIKE "BASKETANALYSISDATA"."TLOGF_H";
-  CREATE TABLE "TLOGF_O" LIKE "BASKETANALYSISDATA"."TLOGF_O";
 
-  INSERT INTO "TLOGF_C" SELECT * FROM "BASKETANALYSISDATA"."TLOGF_C";
-  INSERT INTO "TLOGF_H" SELECT * FROM "BASKETANALYSISDATA"."TLOGF_H";
-  INSERT INTO "TLOGF_O" SELECT * FROM "BASKETANALYSISDATA"."TLOGF_O";
-  ```
-
-<details><summary><mark>If you are following this tutorial after the live event, please import data into the BASKETANALYSISDATA schema prior to the steps above</mark></summary>
+<details><summary><mark>If you are following this tutorial after the live event, please import data into the TECHEDUSERXX schema before starting the next exercise</mark></summary>
 <p>
 
 <details><summary>Import tables and data using SAP HANA Studio</summary>
@@ -89,7 +80,7 @@ For TechEd participants, the reference table and data will be provided in the BA
 
 - select all three tables by clicking at them with the left mouse button
 
-- choose "Add" to select them for import 
+- choose "Add" to select them for import
 
 - press "Next"
 
