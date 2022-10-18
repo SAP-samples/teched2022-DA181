@@ -6,7 +6,7 @@ This repository contains the material for the SAP TechEd 2022 session called DA1
 
 ## Overview
 
-This session introduces attendees to extend their on-premise analytical workloads based on Calculation Views built within repository and schema or HDI containers. The attendees will be guided to model a simple Calculation View, select it from SAP HANA Cockpit in BTP and verify that the calculation view runtime a.k.a column views in SAP HANA Cloud. Attendees can utilize this column view with in Business Application Studio and extend utilizing the latest features offered by SAP HANA Cloud.
+This session introduces attendees to extend their on-premise analytical workloads based on Calculation Views built with the deprecated repository or the new HANA deployment infrastructe (HDI). The attendees will be guided to model a simple Calculation View, select it from SAP HANA Cockpit in BTP and verify that the calculation view runtime a.k.a column views in SAP HANA Cloud are created. Attendees can utilize this column view within SAP Business Application Studio and extend utilizing the latest features offered by SAP HANA Cloud.
 
 ## Requirements
 
@@ -27,8 +27,8 @@ Some basic understanding of SAP HANA Platform Tooling
    - SAP Web IDE (XSA)
 
 The following execises provide 2 tracks that can be done together or seperated based on the individual needs of the participants.
-   - Calculation view based on database schema and repository (XSC) using SAP HANA Studio
-   - Calculation view based on HDI containers and Git (XSA) using SAP Web IDE
+   - Calculation view based on the deprecated repository using SAP HANA Studio (XSC)
+   - Calculation view based on HDI containers using SAP Web IDE (XSA) 
 
 A single SAP HANA Platform will be provided and shared between participants. Detailed server connection info will be provided during the TechEd Live event.
 To follow this exercise, outside the live event, the SAP HANA Platform will not be available and requires a SAP HANA Platform to be available acting as the source system. Also, in a normal corporate environment, the SAP HANA Platform will exist inside corporate firewalls and a cloud connector will be needed to create a network connection from SAP HANA Cloud in BTP to SAP HANA Platfrom on-premise. For simplicity of this workshop, we will bypass the configuration of the cloud connector during the live event.
