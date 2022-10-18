@@ -2,7 +2,7 @@
 
 ## Prerequisites
 
-- a connection in Database Explorer to a running SAP HANA Cloud instance to which the calculation views have been replicated. This connection should use database user DBADMIN
+- a connection in Database Explorer to a running SAP HANA Cloud instance to which the calculation views have been replicated. This connection should use database user TECHEDCONNXX
 - a user in BAS who is allowed to deploy to a cloud foundry space in which the HANA Cloud instance is running
 
 ## Steps in BAS to build calculation views on top of the replicated views
@@ -24,7 +24,7 @@ Again we will take a short-cut and grant the privileges to all database projects
 
     ![open database explorer](./images/openDatabaseExplorer.png)
 
-- in Database Explorer: Right-click on your DBADMIN database connection and choose "Open SQL Console":
+- in Database Explorer: Right-click on your TECHEDCONNXX database connection and choose "Open SQL Console":
 
   ![open SQL console](./images/openSQLConsoleBAS.png)
 
@@ -34,6 +34,7 @@ Again we will take a short-cut and grant the privileges to all database projects
   GRANT SELECT ON SCHEMA TECHED_2022_HDI_DB_1 TO "_SYS_DI#BROKER_CG"."_SYS_DI_OO_DEFAULTS" WITH GRANT OPTION;
   GRANT SELECT ON SCHEMA TECHED_2022_HDI_DB_1 TO "BROKER_USER"."RT_DEFAULTS";
   ```
+  <mark>if your replicated schema name differs from "TECHED_2022_HDI_DB_1", please make sure to replace "TECHED_2022_HDI_DB_1" with the name of your replicated schema twice</mark>
 
 - Select the statements with the mouse and press icon "Run" on the top left:
 
@@ -69,7 +70,7 @@ We will work in a project that we create from a template:
 
 
 ### Create synonyms
-If you want to refer to an objects outside of your project you need to define synonyms for these objects. We will create synonyms for our replicated calculation views next:
+If you want to refer to objects outside of your project you need to define synonyms for these objects. We will create synonyms for our replicated calculation views next:
 
 - In your Workspace: Navigate to folder "src", right-click on "src" and choose "New File"
 
@@ -83,7 +84,7 @@ If you want to refer to an objects outside of your project you need to define sy
 
   ![create mass synonyms](./images/createMassSynonyms.png)
 
-  - Select the Target Container Service, then the schema "TECHED_2022_HDI_DB_1" and press "OK"
+  - Select the Target Container Service, then the schema "TECHED_2022_HDI_DB_1" (the name of your replicated schema) and press "OK"
 
     ![choose synonym schema](./images/chooseSynonymSchema.png)
 
@@ -202,7 +203,7 @@ If you want to refer to an objects outside of your project you need to define sy
 
 ### Run a data preview
 
-- Right-click on node Aggregation and choose "Data Preview"
+- Right-click on node "Aggregation" and choose "Data Preview"
 
   ![data preview](./images/dataPreview.png)
 
@@ -230,11 +231,11 @@ If you want to refer to an objects outside of your project you need to define sy
 
   - Redeploy the view by clicking at the rocket icon or using the keyboard-shortcut of holding down key "CTRL" and pressing key "d"
 
-  - Start a new data preview to check that the values are now sorted by "countFrequency" by selecting tab "Raw Data":
+  - Start a new data preview to check that the values are now sorted by "countFrequency" and select tab "Raw Data":
 
   ![basket analysis result](./images/result.png)
 
 ## Summary
-You have are extending the calculation view that was replicated from the on-premise in SAP HANA Cloud
+You have now extended the calculation view that was replicated from the on-premise system to SAP HANA Cloud
 
 Continue to - [Exercise 6 - Modification calculation view on-premise and apply to SAP HANA Cloud](/exercises/Exercise_6_Modify_and_Apply/)
