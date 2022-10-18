@@ -4,58 +4,41 @@
 > If you don't have SAP HANA Studio already installed and configured then you can skip this section. Please skip to the next [exercise](exercises/Step_3_SAP_WEBIDE/) 
 
 
-In the following steps two calculation views are created from scratch that will later be replicated to SAP HANA Cloud. These models use data of up to three tables. Therefore, these tables are imported first. Afterwards authorizations are granted to use the tables in calculation view modeling
+In the following steps two calculation views are created from scratch that will later be replicated to SAP HANA Cloud.
 
 </br>
-
-### Assign authorizations to use the tables for calculation view modeling
-
-- open a SQL terminal by right-clicking on your connection with database user "SYSTEM" and choosing "Open SQL Console"
-
-  ![open SQL console](./images/openSQLConsole.png)
-
-- In the opened SQL console, type:
-
-  ```SQL
-  GRANT SELECT ON SCHEMA BASKETANALYSISDATA TO _SYS_REPO WITH GRANT OPTION;
-  GRANT SELECT ON SCHEMA BASKETANALYSISDATA TO "_SYS_DI#SYS_XS_HANA_BROKER"."_SYS_DI_OO_DEFAULTS" WITH GRANT OPTION;
-  GRANT SELECT ON SCHEMA BASKETANALYSISDATA TO "SYS_XS_HANA_BROKER"."RT_DEFAULTS";
-  ```
-
-- mark all statements with your mouse and execute the highlighted statements by pressing the "Execute" button on the top-right:
-
-  ![execute SQL statement](./images/execute.png)
-
-  The first line allows using the tables in schema BASKETANALYSISDATA for calculation view modeling in SAP HANA Studio. The other two lines allow using the tables in every Web IDE project.
-
-  > Typically, not all projects should have the authorization to use certain tables and a more fine-granular authorization setup is used. How this can be achieved with HDI development can be found e.g., in this [blog](https://blogs.sap.com/2018/12/11/how-to-use-objects-contained-in-a-schema-outside-of-your-web-ide-full-stack-project-in-sap-hana-service/).
-
-The required tables have been imported and the authorizations assigned. In the next steps we will create calculation view models.
 
 ## Create calculation view models
 
 We will create two calculation view models. The first combines the two tables in a Union node. The second one joins the tables to enable a basket analysis of the data.
 
-### Create package BASKETANALYSISXX
+### Packages
+Packages help structuring your development objects. We have already created a package for you with name "TECHEDUSERXX". You can find it under in your system connection under "Content":
 
-A package helps structuring your development objects. 
+![package to work in](./images/ownPackage.png)
 
-> The instance is a shared instance during the live virtual workshop
+<details><summary><mark>If you are following this tutorial after the live event, please create this package first</mark></summary>
+<p>
+
+#### Create package TECHEDUSERXX
 
 - To create a package, right-click on "Content", select "New" and "Package"
 
   ![new package](./images/newPackage.png)
 
 
-  - Name it "BasketAnalysis" and choose "OK":
+  - Name it "TECHEDUSERXX" and choose "OK":
 
   ![name package](./images/namePackage.png)
+
+</details>
+<p>
 
 ### Create calculation view COMBINESOURCESFORBASKETANALYSIS
 
 This calculation view will combine different data source using a Union node.
 
-- Right-click on the new package and choose "New" and "Calculation View"
+- Right-click on your package "TECHEDUSERXX" and choose "New" and "Calculation View"
 - Name the calculation view "COMBINESOURCESFORBASKETANALYSIS" and press "Finish":
 
   ![name COMBINESOURCESFORBASKETANALYSIS](./images/COMBINESOURCESFORBASKETANALYSIS.png)
@@ -118,7 +101,7 @@ This calculation view will prepare the data so they can be used for basked analy
 
 #### Create Calculation View BASKETANALYSIS_CALCULATE
 
-- Right-click on package "BasketAnalysis" and choose "New" and then "Calculation View"
+- Right-click on package "TECHEDUSERXX" and choose "New" and then "Calculation View"
 
 - Name the view "BASKETANALYSIS_CALCULATE" and press "Finish"
 
