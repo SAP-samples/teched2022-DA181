@@ -1,10 +1,10 @@
 # Exercise 6 - Modification calculation view on-premise and apply to SAP HANA Cloud
 
-We will modify calculation view "COMBINESOURCESFORBASKETANALYSIS" to illustrate the replication behavior after a change to the source.
+We will modify calculation view "COMBINESOURCESFORBASKETANALYSIS" in SAP Web IDE to illustrate the replication behavior after a change to the source.
 
 ## Modify calculation view "COMBINESOURCESFORBASKETANALYSIS"
 
-- Open calculation view "COMBINESOURCESFORBASKETANALYSIS" by double-clicking on the respective file on the left. If the file is not visible, open the db/src tree first:
+- Open calculation view "COMBINESOURCESFORBASKETANALYSIS" in SAP Web IDE by double-clicking on the respective file on the left. If the file is not visible, open the db/src tree first:
 
     ![open COMBINESOURCESFORBASKETANALYSIS](./images/openCOMBINESOURCESFORBASKETANALYSIS.png)
 
@@ -39,4 +39,4 @@ The modified database object has been created.
 We will have a look at the impact of this modification on the replication next.
 
 ## Summary
-You have now modified the calculation view model from the on-premise side and the changes be applied to the SAP HANA Cloud side
+You have now modified the calculation view model in the on-premise instance and the changes are applied to the SAP HANA Cloud instance
