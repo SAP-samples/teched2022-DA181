@@ -22,6 +22,8 @@ In this exercise, we will replicate the calculation view that was modeled or imp
 </details>
 <BR />
 
+For connecting to the SAP HANA Platform, a technical user TECHEDCONNXX will be used with the correct privileges. The following privileges are required for the user
+
 >- CATALOG READ for the wizard ui to list the objects to be selected for replication.
 >- SELECT, DROP, and CREATE ANY on the schemas of users to be replicated for replicating users other than the technical user.
 >- SELECT, DROP, and CREATE ANY on schemas with objects to be replicated objects to be replication assuming different from the user above.
@@ -58,6 +60,8 @@ Once the selection is done, click "Step 2" to move to the second step
 - Next step is to select the schema owner where the table data exists.
   - Normally, the table where the schema resides are default schema where the name of the owner and the schema name is identical. But there are cases where the owner could be different as the owner may have used 'CREATE SCHEMA <schema_name>' where the <schema_name> is not a DB user. So, in this step, select the right owner. If the owner is not listed, it means that the technical user doesn't have the privilege on the schema to be replicated.
   - There may be 2 different users shown, one is for the table data and a second user is the for the HDI container. Using the Replication Service, the HDI Container based artifacts will be created as schema based on SAP HANA Cloud as only the runtime objects are being replicated.
+
+  <BR /><BR /><CENTER><img src="./images/ReplicateOwner.png" width="90%"></CENTER><BR /><BR />
 
 - Now, we will select the calculation view that we would like to use in the SAP HANA Cloud. We will select the top level calculation view and the Replication Service will parse the metadata from the source system and build the dependent objects tree. Then it will re-create the runtime objects in SAP HANA Cloud from leaf up considering the dependency until the selected calculation view is created.
   - For repository based calculation view, select "BasketAnalysis/COMBINESOURCEFORBASKETANALYSIS" object which is the top level calculation view
