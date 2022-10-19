@@ -2,7 +2,7 @@
 
 ## Prerequisites
 
-- a connection in Database Explorer to a running SAP HANA Cloud instance to which the calculation views have been replicated. This connection should use database user DBADMIN
+- a connection in Database Explorer to a running SAP HANA Cloud instance to which the calculation views have been replicated. This connection should use database user TECHEDCONNXX
 - SAP HANA Native Application dev space in BAS which includes the SAP HANA Calculation View Editor and MTA Tools
 - a user in BAS who is allowed to deploy to a cloud foundry space in which the HANA Cloud instance is running
 Please refer to [Create a Development Project in SAP Business Studio](https://developers.sap.com/tutorials/hana-cloud-mission-trial-7.html)
@@ -26,14 +26,14 @@ Again we will take a short-cut and grant the privileges to all database projects
 
     ![open database explorer](./images/openDatabaseExplorer.png)
 
-- in Database Explorer: Right-click on your DBADMIN database connection and choose "Open SQL Console":
+- in Database Explorer: Right-click on your TECHEDCONNXX database connection and choose "Open SQL Console":
 
   ![open SQL console](./images/openSQLConsoleBAS.png)
 
 - paste the following SQL statements into the console:
   ```SQL
-  GRANT SELECT ON SCHEMA TECHEDUSERXX TO "_SYS_DI#BROKER_CG"."_SYS_DI_OO_DEFAULTS" WITH GRANT OPTION;
-  GRANT SELECT ON SCHEMA TECHEDUSERXX TO "BROKER_USER"."RT_DEFAULTS";
+  GRANT SELECT ON SCHEMA SYS_BIC TO "_SYS_DI#BROKER_CG"."_SYS_DI_OO_DEFAULTS" WITH GRANT OPTION;
+  GRANT SELECT ON SCHEMA SYS_BIC TO "BROKER_USER"."RT_DEFAULTS";
   ```
 
   ```SQL
