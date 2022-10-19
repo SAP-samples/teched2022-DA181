@@ -34,9 +34,14 @@ The columns of TLOGF_H are now mapped to the output columns based on name corres
 
     ![build selected files](./images/buildSelectedFiles.png)
 
-The modified database object has been created. 
+The modified database object has been created.
 
-We will have a look at the impact of this modification on the replication next.
+To apply the changes to SAP HANA Cloud, we go to the SAP HANA Cockpit in BTP and locate the "Connections to SAP HANA Cloud" application card.
+You will notice that the name of the connection that was entered in Exercise 4 is listed with some number on the right. The number is objects being replicated.
+    ![application card](./images/ApplicationCard.png)
+
+We click on the connection name, and move to the monitoring of the replication.
+    ![monitoring](./images/Monitoring.png)
 
 ## Summary
 You have now modified the calculation view model in the on-premise instance and the changes are applied to the SAP HANA Cloud instance
