@@ -73,11 +73,11 @@ Once the selection is done, click "Create Connection" to move to the second step
 
   <BR /><BR /><CENTER><img src="./images/SelectCV.png" width="90%"></CENTER><BR /><BR />
 
-- As the Replication Service reads the remote metadata, the selected object will be shown in the monitoring view and status will be in loading state with esclamation icon to display the status of the replication
+- As the Replication Service reads the remote metadata, the selected object will be shown in the monitoring view and status will be in loading state with exclamation icon to display the detail status of the replication
 
-  <BR /><BR /><CENTER><img src="./images/StatusLoading.png" width="400"></CENTER><BR /><BR />
+  <BR /><BR /><CENTER><img src="./images/StatusLoading.png" width="90%"></CENTER><BR /><BR />
 
-  - Clicking on the esclamation icon will display a popup dialog showing the status of replication or load.
+  - Once the replication is done, the status will change to "Loading..." without the exclamation mark.
 
   <BR /><BR /><CENTER><img src="./images/StatusLoading.png" width="400"></CENTER><BR /><BR />
 
