@@ -63,8 +63,7 @@ For TechEd participants, the reference table and data will be provided in the TE
 <details><summary><mark>If you are following this tutorial after the live event, please import data into the TECHEDUSERXX schema before starting the next exercise</mark></summary>
 <p>
 
-<details><summary>Import tables and data using SAP HANA Studio</summary>
-<p>
+Import tables and data using SAP HANA Studio
 
 - In the File menu, choose "Import":
 
@@ -90,38 +89,7 @@ For TechEd participants, the reference table and data will be provided in the TE
 
 - press "Finish"
 The tables have now been imported with data.
-</p>
-</details>
-</br>
-<details><summary>Import tables and data using SAP HANA Database Explorer</summary>
-<p>
 
-- Open SAP HANA Database Explorer. The detail connection info will be given during TechEd Live Virtual Workshop
-
-- As the database instance is not registered, you would need to register the connection info in the "Add Instance" dialog window
-
-- Select "SAP HANA Database (Multitenant)" for the instance type
-
-- Enter host info
-- Use the TECHEDUSERXX user to connect
-
-- Expand the connection and righ-click on "Catalog"
-
-  - Choose "Import Catalog Objects":
-
-    ![import catalog objects](./images/importCatalogObjects.png)
-
-
-- Use the "Browse" button to select your local version of [BASKETANALYIS_TABLES_DatabaseExplorer](exercises/resources/BASKETANALYIS_TABLES_DatabaseExplorer.tar.gz")
-
-    - Select "Include object data". You can ignore the other options
-
-    - Start the import process by pressing "Import":
-
-    ![import tables](./images/importTables.png)
-The tables have now been imported with data.
-</p>
-</details>
 
 </p>
 </details>
