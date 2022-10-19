@@ -11,6 +11,12 @@ A few housekeeping is needed for this workshop.
   - For users attending the TechEd 2022 Virtual Live Workshop, a user will be assigned to each participant
   - For users attending after the event, database users need to be created
 
+- XSA with WebIDE running for HDI container based calculation views when following this tutorial after the live event.
+  - [SAP Web IDE for SAP HANA - Installation and Upgrade Guide](https://help.sap.com/docs/SAPWEBIDE/292437fbf7794e2cb0d323b19a38285c/c0563b9c5cbd4a78ab0e58c6bc97bedb.html)
+  
+- Business Application Studio running BTP for extending the replicated calculation view in SAP HANA Cloud.
+  - For setup of Business Application Studio trial, setup based on [Set Up SAP Business Application Studio for Development ](https://developers.sap.com/tutorials/appstudio-onboarding.html)
+
 ## User Creation and Grant Privileges
 
 There will be 2 users assigned to each participants for this workshop which will be assigned during the event
