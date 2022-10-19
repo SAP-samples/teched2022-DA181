@@ -35,17 +35,17 @@ For connecting to the SAP HANA Platform, a technical user TECHEDCONNXX will be u
 
 - Once the SAP HANA database is running, right click on the actions and select "Open in SAP HANA Cockpit" menu
 
-  <BR /><BR /><CENTER><img src="./images/OpenCockpit.png" width="90%"></CENTER><BR /><BR />
+  <BR /><CENTER><img src="./images/OpenCockpit.png" width="90%"></CENTER><BR /><BR />
 
 - Login as DBADMIN
 - In the Monitoring views, locate the "Connections to SAP HANA Cloud" card and select "Create Replication" to start the Replication Service wizard for replicating the calculation views
 
-  <BR /><BR /><CENTER><img src="./images/ConnectionsToSAPHANA.png" width="400"></CENTER><BR /><BR />
+  <BR /><CENTER><img src="./images/ConnectionsToSAPHANA.png" width="400"></CENTER><BR /><BR />
 
 - "Create New Replication" wizard starts and the first step is to select the connection type of the source system. First, we will choose "Create a New Connection" which is already selected and select "SAP HANA 2.0 On-Premise" as the source system will will connect during the live workshop is SAP HANA 2.0 SPS06. This will use the remote table replication which is HANA native replication between HANA systems. For SPS04 or lower, as remote table replication is not supported, SDI will be used for replicating.
 Once the selection is done, click "Create Connection" to move to the second step
 
-  <BR /><BR /><CENTER><img src="./images/ConnectionType.png" width="90%"></CENTER><BR /><BR />
+  <BR /><CENTER><img src="./images/ConnectionType.png" width="90%"></CENTER><BR /><BR />
 
 - Next, setup the connection properties to the on-premise SAP HANA Platform and click "Step 3" to move to the next step
   - Enter name for the connection. The connection will be created as a remote source within the database
@@ -55,31 +55,31 @@ Once the selection is done, click "Create Connection" to move to the second step
   - Next enter the technical user to connect to the on-premise HANA database
   - Click "Create Connection" button once the property information have been entered to create the remote source in the background. Once the remote source is created, the wizard will show the status and move to the next step
 
-  <BR /><BR /><CENTER><img src="./images/CreateConnection.png" width="90%"></CENTER><BR /><BR />
+  <BR /><CENTER><img src="./images/CreateConnection.png" width="90%"></CENTER><BR /><BR />
 
 - Next step is to select the schema owner where the table data exists. Select all users that is listed and click Step 4
   - The schema owner list is shown based on SELECT privileges given to the technical user TECHEDCONXX. If the schema owner is not listed here, need to check if the SELECT privilege have been granted correctly.
   - There may be 2 different users shown, TECHEDUSERXX is for the schema based calculation views and TECED_2022_HDI_DB_1 is for the HDI container depending on the completion of Exercise 2 and 3.
 
-  <BR /><BR /><CENTER><img src="./images/ReplicateOwner.png" width="90%"></CENTER><BR /><BR />
+  <BR /><CENTER><img src="./images/ReplicateOwner.png" width="90%"></CENTER><BR /><BR />
 
 - As the original password cannot be extracted, enter the password for the schema owners that is being replicated and click Step 5
 
-  <BR /><BR /><CENTER><img src="./images/ReplicateOwnerPassword.png" width="90%"></CENTER><BR /><BR />
+  <BR /><CENTER><img src="./images/ReplicateOwnerPassword.png" width="90%"></CENTER><BR /><BR />
 
 - Now, we will select the calculation view that we would like to use in the SAP HANA Cloud. We will select the top level calculation view and the Replication Service will parse the metadata from the source system and build the dependent objects tree. Then it will re-create the runtime objects in SAP HANA Cloud from leaf up considering the dependency until the selected calculation view is created.
   - For repository based calculation view, select "BasketAnalysis/COMBINESOURCEFORBASKETANALYSIS" object which is the top level calculation view
   - Click "Confirm" button to start getting the metadata of the selected object and start building up the dependency tree.
 
-  <BR /><BR /><CENTER><img src="./images/SelectCV.png" width="90%"></CENTER><BR /><BR />
+  <BR /><CENTER><img src="./images/SelectCV.png" width="90%"></CENTER><BR /><BR />
 
 - As the Replication Service reads the remote metadata, the selected object will be shown in the monitoring view and status will be in loading state with exclamation icon to display the detail status of the replication
 
-  <BR /><CENTER><img src="./images/StatusLoading.png" width="90%"></CENTER><BR />
+  <CENTER><img src="./images/StatusLoading.png" width="90%"></CENTER><BR />
 
   - Once the replication is done, the status will change to "Loading..." without the exclamation mark.
 
-  <BR /><CENTER><img src="./images/StatusDone.png" width="90%"></CENTER><BR />
+  <CENTER><img src="./images/StatusDone.png" width="90%"></CENTER><BR />
 
 
 ## Summary
