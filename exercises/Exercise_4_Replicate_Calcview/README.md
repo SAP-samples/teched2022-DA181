@@ -79,7 +79,7 @@ Once the selection is done, click "Create Connection" to move to the second step
 
   - Once the replication is done, the status will change to "Loading..." without the exclamation mark.
 
-  <BR /><BR /><CENTER><img src="./images/StatusLoading.png" width="90%"></CENTER><BR /><BR />
+  <BR /><BR /><CENTER><img src="./images/StatusDone.png" width="90%"></CENTER><BR /><BR />
 
 
 ## Summary
