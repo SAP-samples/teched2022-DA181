@@ -2,19 +2,21 @@
 
 ## Prerequisites
 
-- a connection in Database Explorer to a running SAP HANA Cloud instance to which the calculation views have been replicated. This connection should use database user TECHEDCONNXX
+- a connection in Database Explorer to a running SAP HANA Cloud instance to which the calculation views have been replicated. This connection should use database user DBADMIN
+- SAP HANA Native Application dev space in BAS which includes the SAP HANA Calculation View Editor and MTA Tools
 - a user in BAS who is allowed to deploy to a cloud foundry space in which the HANA Cloud instance is running
+Please refer to [Create a Development Project in SAP Business Studio](https://developers.sap.com/tutorials/hana-cloud-mission-trial-7.html)
 
 ## Steps in BAS to build calculation views on top of the replicated views
 
 We will now create a calculation view on top of the replicated calculation view "BASKETANALYIS_CALCULATE". To do so we first need to ensure that we are authorized to use "BASKETANALYIS_CALCULATE" in our HDI container.
 
-### Grant authorizations to use calculation view "BASKETANALYIS_CALCULATE" in calculation views
+### Grant authorizations to use the replicated calculation view "BASKETANALYIS_CALCULATE" in the new calculation view that we are modeling
 
 Again we will take a short-cut and grant the privileges to all database projects in BAS. Typically, a more fine granular authorization is used. See e.g., [FAQs](https://blogs.sap.com/2019/11/13/faq-modeling-in-web-ide/).
 
 
-- Open Database Explorer:
+- Open Database Explorer from Business Application Studio:
 
   - Choose "Find Command" of menu "View"
 
@@ -24,17 +26,21 @@ Again we will take a short-cut and grant the privileges to all database projects
 
     ![open database explorer](./images/openDatabaseExplorer.png)
 
-- in Database Explorer: Right-click on your TECHEDCONNXX database connection and choose "Open SQL Console":
+- in Database Explorer: Right-click on your DBADMIN database connection and choose "Open SQL Console":
 
   ![open SQL console](./images/openSQLConsoleBAS.png)
 
 - paste the following SQL statements into the console:
+  ```SQL
+  GRANT SELECT ON SCHEMA TECHEDUSERXX TO "_SYS_DI#BROKER_CG"."_SYS_DI_OO_DEFAULTS" WITH GRANT OPTION;
+  GRANT SELECT ON SCHEMA TECHEDUSERXX TO "BROKER_USER"."RT_DEFAULTS";
+  ```
 
   ```SQL
   GRANT SELECT ON SCHEMA TECHED_2022_HDI_DB_1 TO "_SYS_DI#BROKER_CG"."_SYS_DI_OO_DEFAULTS" WITH GRANT OPTION;
   GRANT SELECT ON SCHEMA TECHED_2022_HDI_DB_1 TO "BROKER_USER"."RT_DEFAULTS";
   ```
-  <mark>if your replicated schema name differs from "TECHED_2022_HDI_DB_1", please make sure to replace "TECHED_2022_HDI_DB_1" with the name of your replicated schema twice</mark>
+  <mark>Use the TECHEDUSERXX for extending the calculation view based on repository and TECHED_2022_HDI_DB_1 for extending the HDI based calculation views. If your replicated schema name differs from "TECHED_2022_HDI_DB_1", please make sure to replace "TECHED_2022_HDI_DB_1" with the name of your replicated schema twice</mark>
 
 - Select the statements with the mouse and press icon "Run" on the top left:
 
@@ -62,7 +68,7 @@ We will work in a project that we create from a template:
 
   - In step "Set Database Information" keep the default setting and press "Next"
 
-  - Enter your Cloud Foundry email-address and password in the respective fields
+  - Enter your Cloud Foundry email-address and password in the respective fields.
 
   - Select your Org and Space and press "Finish".
 
@@ -84,7 +90,7 @@ If you want to refer to objects outside of your project you need to define synon
 
   ![create mass synonyms](./images/createMassSynonyms.png)
 
-  - Select the Target Container Service, then the schema "TECHED_2022_HDI_DB_1" (the name of your replicated schema) and press "OK"
+  - Select the Target Container Service, then the schema "TECHEDUSERXX" and/or "TECHED_2022_HDI_DB_1" (the name of your replicated schema) and press "OK"
 
     ![choose synonym schema](./images/chooseSynonymSchema.png)
 
