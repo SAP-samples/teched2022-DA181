@@ -12,7 +12,7 @@ In this exercise, we will replicate the calculation view that was modeled or imp
 
   <BR /><BR /><CENTER><img src="./images/AllowAllIPs.png" width="90%"></CENTER><BR /><BR />
 
-<details><summary>Setup cloud connector</summary>
+<details><summary>(Optional)Setup cloud connector for configuration after the live event</summary>
   <p>
   - In a corporate environment, the on-premise systems are protected behind  firewalls. To allow connection from SAP HANA Cloud to on-premise SAP HANA Platform, a cloud connector setup is required. For the simplicity of this workshop, this step will not be required as we have the SAP HANA Platform running in the public network so that a connection can be established directly from the SAP HANA Cloud instance.
 
@@ -20,11 +20,12 @@ In this exercise, we will replicate the calculation view that was modeled or imp
   [Use the Cloud Connector to Connect SAP HANA On-Premise to SAP HANA Cloud, SAP HANA Database](https://developers.sap.com/tutorials/hana-cloud-mission-extend-08.html)
   </p>
 </details>
+<BR />
 
 >- CATALOG READ for the wizard ui to list the objects to be selected for replication.
-- SELECT, DROP, and CREATE ANY on the schemas of users to be replicated for replicating users other than the technical user.
-- SELECT, DROP, and CREATE ANY on schemas with objects to be replicated objects to be replication assuming different from the user above.
-- SELECT on any other objects to be replicated, and TRIGGER if these objects need to be replicated in real-time. Trigger is needed as it is the means of real-time replication.
+>- SELECT, DROP, and CREATE ANY on the schemas of users to be replicated for replicating users other than the technical user.
+>- SELECT, DROP, and CREATE ANY on schemas with objects to be replicated objects to be replication assuming different from the user above.
+>- SELECT on any other objects to be replicated, and TRIGGER if these objects need to be replicated in real-time. Trigger is needed as it is the means of real-time replication.
 
 ## Setup connection from SAP HANA Cloud to SAP HANA Platform
 
@@ -34,7 +35,7 @@ In this exercise, we will replicate the calculation view that was modeled or imp
 
   <BR /><BR /><CENTER><img src="./images/OpenCockpit.png" width="90%"></CENTER><BR /><BR />
 
-- Login with DBADMIN
+- Login as DBADMIN
 - In the Monitoring views, locate the "Connections to SAP HANA Cloud" card and select "Create Replication" to start the Replication Service wizard for replicating the calculation views
 
   <BR /><BR /><CENTER><img src="./images/ConnectionsToSAPHANA.png" width="400"></CENTER><BR /><BR />
