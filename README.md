@@ -35,7 +35,7 @@ To follow this exercise, outside the live event, the SAP HANA Platform will not 
 
 ## Exercises
 
-- [Exercise 1 - Data Preparation](exercises/Exercise_1_Setup/)
+- [Exercise 1 - Data Preparation (optional for post TechEd event participants)](exercises/Exercise_1_Setup/)
 - [Exercise 2 - Calculation view modeling with SAP HANA Studio](exercises/Exercise_2_SAP_HANA_STUDIO/)
 - [Exercise 3 - Calculation view modeling with SAP Web IDE](exercises/Exercise_3_SAP_WEBIDE/)
 - [Exercise 4 - Setup Replication from SAP HANA Platform to SAP HANA Cloud](exercises/Exercise_4_Replicate_Calcview/)
