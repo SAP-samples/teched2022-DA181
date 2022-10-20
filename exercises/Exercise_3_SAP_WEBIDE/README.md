@@ -108,6 +108,12 @@ For the replication to SAP HANA Cloud user TECHEDCONNXX requires privilege SELEC
         ```
     - Mark the statements with the mouse and press the green arrow on the top left to run the marked statements
 
+    - For participants following this exercise after the live event, login to the SAP Database Explorer as DBADMIN, to grant the HDI Container Schema access role to TECHEDCONNXX user
+      
+      ```SQL
+      GRANT "BasketAnalysis::PublicAccessSchema#(TECHED_2022_HDI_DB_1)";
+      ```
+
 User TECHEDCONNXX has now SELECT privileges on the HDI container schema and therefore also on the calculation views that are deployed into it.
 
 ## Summary
