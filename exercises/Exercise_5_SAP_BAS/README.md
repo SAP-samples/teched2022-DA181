@@ -16,13 +16,9 @@ We will now create a calculation view on top of the replicated calculation view 
 Again we will take a short-cut and grant the privileges to all database projects in BAS. Typically, a more fine granular authorization is used. See e.g., [FAQs](https://blogs.sap.com/2019/11/13/faq-modeling-in-web-ide/).
 
 
-- Open Database Explorer from Business Application Studio:
+- open Database Explorer from Business Application Studio:
 
-  - Choose "Find Command" of menu "View"
-
-    ![find command](./images/findCommand.png)
-
-  - an entry field pops up, enter "Database Explorer" and choose "SAP HANA: Open Database Explorer"
+  - in the entry field that you find in the center on the top enter ">Open Database Explorer" and choose "SAP HANA: Open Database Explorer"
 
     ![open database explorer](./images/openDatabaseExplorer.png)
 
@@ -54,9 +50,14 @@ We will work in a project that we create from a template:
 
 - Switch back to your Business Application Studio tab
 
-- In the Welcome view, select "Start from template" (if the Welcome screen is not visible: open it by using menu "Help" and then select "Welcome"):
+- In the Get Started view, select "Start from template":
 
   ![start from template](./images/startFromTemplate.png)
+
+
+     > If the Get Started screen is not visible: open it by clicking on the Hamburger menu on the top left, choosing "Help" and then "Get Started"
+     >
+     >![get started](./images/openGetStarted.png)
 
   - Choose SAP HANA Database Project and press "Start":
 
