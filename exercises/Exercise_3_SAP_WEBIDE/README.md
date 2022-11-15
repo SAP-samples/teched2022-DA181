@@ -3,7 +3,7 @@
 ## Prerequisites
 
 - a running SAP Web IDE that is connected to the same SAP HANA database into which the tables had been imported
-- a Web IDE user that is allowed to develop in a XSA space
+- a Web IDE user that is allowed to develop in a XSA space for details how to set this up, see e.g., [set up of Web IDE roles](https://help.sap.com/docs/SAPWEBIDE/292437fbf7794e2cb0d323b19a38285c/09749275442f47a5877d91b932fe948a.html) and [preparation of XSA space](https://help.sap.com/docs/SAPWEBIDE/292437fbf7794e2cb0d323b19a38285c/a6a17b3bb99d4280b5e5c354d0d74dab.html)
 
 Creating the same calculation views in SAP Web IDE would look very similar to creating them in SAP HANA Studio. Therefore, we migrated the views using the [xs-migration assistant](https://help.sap.com/docs/SAP_HANA_PLATFORM/58d81eb4c9bc4899ba972c9fe7a1a115/5775fac4200441589c12a5421d0bcb1e.html) and provide you the migrated calculation views in a [zip file](/exercises/resources/TECHED_2022.zip).
 
