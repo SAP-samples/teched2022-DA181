@@ -13,7 +13,7 @@ A few housekeeping is needed for this workshop.
       <ip provided> vhcalhdbdb.dummy.nodomain vhcalhdbdb
   - If you are behind a corporate firewall, please make sure that <strong>*.dummy.nodomain</strong> is part of the exception settings for your proxy if needed
 
-- Import SSL Certificate to bypass SSL certificate warning in the browser
+- Import SSL Certificate to bypass SSL certificate warning in the browser (for users using the CAL image)
   - For MAC, download teched.pem and double click the file to install the certificate.
   - For Windows, download root.crt and execute the following
     - certutil -addstore Root root.crt
