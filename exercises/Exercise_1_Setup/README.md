@@ -5,8 +5,19 @@ A few housekeeping is needed for this workshop.
 
 - a running SAP HANA Studio with a connection to a running SAP HANA Database
   - For users attending the TechEd 2022 Virtual Live Workshop, a connection info will be provided during the workshop
-  - For users attending after the event, a local HANA Platform (express edition) is needed. Please follow the [installation instruction](https://developers.sap.com/group.hxe-install-vm-xsa.html) to install a VM image locally.
+  - For users attending after the event, a local HANA Platform (express edition) is needed. Please follow the [installation instruction](https://developers.sap.com/group.hxe-install-vm-xsa.html) to install a VM image locally. Additionally, you can use the CAL image for SAP HANA 2.0 SPS06 Rev63 from http://cal.sap.com which will be available soon
+  
+- host file modification
+  - Adapt your local /etc/hosts file (For Windows: %SystemRoot%\system32\drivers\etc\hosts) to map the following hosts to the HANA Server  IP. (for users attending the TechEd 2022 Virtual Live Workshop, the IP address to the system will be provided during the event)
+  - please map the following info in the hosts file
+      <ip provided> vhcalhdbdb.dummy.nodomain vhcalhdbdb
+  - If you are behind a corporate firewall, please make sure that <strong>*.dummy.nodomain</strong> is part of the exception settings for your proxy if needed
 
+- Import SSL Certificate to bypass SSL certificate warning in the browser
+  - For MAC, download teched.pem and double click the file to install the certificate.
+  - For Windows, download root.crt and execute the following
+    - certutil -addstore Root root.crt
+    
 - database user to connect is needed
   - For users attending the TechEd 2022 Virtual Live Workshop, a user will be assigned to each participant
   - For users attending after the event, database users need to be created
