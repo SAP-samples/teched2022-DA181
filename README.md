@@ -1,3 +1,5 @@
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/teched2022-DA181)](https://api.reuse.software/info/github.com/SAP-samples/teched2022-DA181)
+
 # DA181 - SAP HANA Cloud: Dynamic Hybrid Extensions for Analytical Workloads
 
 ## Description
