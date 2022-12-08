@@ -5,7 +5,7 @@ A few housekeeping is needed for this workshop.
 
 - a running SAP HANA Studio with a connection to a running SAP HANA Database
   - For users attending the TechEd 2022 Virtual Live Workshop, a connection info will be provided during the workshop
-  - For users attending after the event, a local HANA Platform (express edition) is needed. Please follow the [installation instruction](https://developers.sap.com/group.hxe-install-vm-xsa.html) to install a VM image locally. Additionally, you can use the CAL image for SAP HANA 2.0 SPS06 Rev63 from http://cal.sap.com which will be available soon
+  - For users attending after the event, a local HANA Platform (express edition) is needed. Please follow the [installation instruction](https://developers.sap.com/group.hxe-install-vm-xsa.html) to install a VM image locally. Additionally, you can use the CAL image for SAP HANA 2.0 SPS06 Rev63 from [SAP Cloud Appliance Library](https://cal.sap.com/catalog#/applianceTemplates/3e897d4f-e384-49b4-9fca-f15a888a8e3f).
   
 - host file modification
   - Adapt your local /etc/hosts file (For Windows: %SystemRoot%\system32\drivers\etc\hosts) to map the following hosts to the HANA Server  IP. (for users attending the TechEd 2022 Virtual Live Workshop, the IP address to the system will be provided during the event)
@@ -33,8 +33,6 @@ A few housekeeping is needed for this workshop.
 There will be 2 users assigned to each participants for this workshop which will be assigned during the event
     - TECHEDUSERXX is the user that contains the tables and data
     - TECHEDCONNXX is a technical user that will be used for connection from the SAP HANA Cloud to the on-prem SAP HANA Platform.
-
->XX will be a number assigned during the live virtual workshop event. Please make sure that you are only using the assigned user so that it will not interfer with others
 
 <details><summary><mark>If you are following this tutorial after the live event, please create these 2 users in the tenant database connected with SYSTEM user</mark></summary>
 <p>
